@@ -7,8 +7,16 @@ import Dashboard from './pages/Dashboard/Dashboard';
 import Home from './pages/Dashboard/subroutes/Home';
 import Verify from './pages/Dashboard/subroutes/Verify';
 import Safety from './pages/Dashboard/subroutes/Safety';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+import { useEffect } from 'react';
+
 
 function App() {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
 
   return (
     <>
